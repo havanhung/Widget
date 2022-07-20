@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#434343"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/title1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="BTC" />
+
+    <TextView
+        android:id="@+id/text_price"
+        style="@style/title1"
+        android:layout_centerHorizontal="true"
+        tools:text="$20.119,19" />
+
+    <TextView
+        android:id="@+id/text_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_border_positive"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        tools:text="+0.17%" />
+
+    <TextView
+        android:id="@+id/text_vol"
+        style="@style/title2"
+        android:layout_below="@+id/text_name"
+        tools:text="Vol 2,21 B" />
+
+    <TextView
+        android:id="@+id/text_total_price"
+        style="@style/title2"
+        android:layout_below="@+id/text_price"
+        android:layout_centerHorizontal="true"
+        tools:text="20.119,19 $" />
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_below="@+id/text_total_price"-->
+<!--      />-->
+</RelativeLayout>
